@@ -6,25 +6,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="8dp"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
     <EditText
+        android:id="@+id/editDistance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:inputType="number"
         android:hint="@string/distancia"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:inputType="number"
         android:text="@string/total_de_quilometros"/>
 
     <EditText
+        android:id="@+id/editPrice"
         android:layout_width="match_parent"
         android:layout_marginTop="32dp"
         android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
         android:hint="@string/preco"/>
 
     <TextView
@@ -34,9 +39,11 @@
         android:text="@string/preco_por_litro"/>
 
     <EditText
+        android:id="@+id/editAutonomia"
         android:layout_width="match_parent"
         android:layout_marginTop="32dp"
         android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
         android:hint="@string/autonomia"/>
 
     <TextView
@@ -55,6 +62,7 @@
         android:text="@string/seu_gasto_total_sera_de"/>
 
     <TextView
+        android:id="@+id/textTotalValue"
         android:layout_width="wrap_content"
         android:textSize="40sp"
         android:layout_marginTop="16dp"
@@ -64,10 +72,12 @@
         android:text="@string/valor_toral_rs"/>
 
     <Button
+        android:id="@+id/buttonCalculate"
         android:layout_marginTop="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="28dp"
+        android:padding="20dp"
+        android:textSize="20sp"
         android:background="@color/lightGreen"
         android:textColor="@color/white"
         android:text="@string/calcular"/>
